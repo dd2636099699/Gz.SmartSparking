@@ -1,0 +1,6 @@
+@Gz.SmartSparking.Server.Startt_HostAddress = http://localhost:5043
+
+GET {{Gz.SmartSparking.Server.Startt_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

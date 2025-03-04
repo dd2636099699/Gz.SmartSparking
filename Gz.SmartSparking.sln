@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{4D96A7D6-07C0-4418-B0DB-88442782CABD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{358EAA63-8BE0-4D85-BA91-9CC8ED100416}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gz.SmartSparking.Server.Startt", "Server\Gz.SmartSparking.Server.Startt\Gz.SmartSparking.Server.Startt.csproj", "{5CC1B836-A1FD-4376-B197-70B9190E1EDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gz.SmartSparking.Client.Start", "Client\Gz.SmartSparking.Client.Start\Gz.SmartSparking.Client.Start.csproj", "{9370DD19-675A-407A-A74E-DF8A203D6C47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gz.SmartSparking.Server.EFCore", "Server\Gz.SmartSparking.Server.EFCore\Gz.SmartSparking.Server.EFCore.csproj", "{A6DC9359-5851-4184-B51C-9FAA8ED8EBD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{9389E7AC-6897-4DD0-930A-373E229BBA94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gz.SmartSparking.Server.Common", "Server\Gz.SmartSparking.Server.Common\Gz.SmartSparking.Server.Common.csproj", "{534D0599-2C53-4622-96F7-0BD796D12077}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gz.SmartSparking.Server.ICommon", "Server\Gz.SmartSparking.Server.ICommon\Gz.SmartSparking.Server.ICommon.csproj", "{BF90A923-7979-49BD-ACAE-31A16889E8B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CC1B836-A1FD-4376-B197-70B9190E1EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CC1B836-A1FD-4376-B197-70B9190E1EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CC1B836-A1FD-4376-B197-70B9190E1EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CC1B836-A1FD-4376-B197-70B9190E1EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9370DD19-675A-407A-A74E-DF8A203D6C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9370DD19-675A-407A-A74E-DF8A203D6C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9370DD19-675A-407A-A74E-DF8A203D6C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9370DD19-675A-407A-A74E-DF8A203D6C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6DC9359-5851-4184-B51C-9FAA8ED8EBD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6DC9359-5851-4184-B51C-9FAA8ED8EBD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6DC9359-5851-4184-B51C-9FAA8ED8EBD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6DC9359-5851-4184-B51C-9FAA8ED8EBD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{534D0599-2C53-4622-96F7-0BD796D12077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{534D0599-2C53-4622-96F7-0BD796D12077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{534D0599-2C53-4622-96F7-0BD796D12077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{534D0599-2C53-4622-96F7-0BD796D12077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF90A923-7979-49BD-ACAE-31A16889E8B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF90A923-7979-49BD-ACAE-31A16889E8B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF90A923-7979-49BD-ACAE-31A16889E8B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF90A923-7979-49BD-ACAE-31A16889E8B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5CC1B836-A1FD-4376-B197-70B9190E1EDD} = {358EAA63-8BE0-4D85-BA91-9CC8ED100416}
+		{9370DD19-675A-407A-A74E-DF8A203D6C47} = {4D96A7D6-07C0-4418-B0DB-88442782CABD}
+		{A6DC9359-5851-4184-B51C-9FAA8ED8EBD5} = {358EAA63-8BE0-4D85-BA91-9CC8ED100416}
+		{9389E7AC-6897-4DD0-930A-373E229BBA94} = {358EAA63-8BE0-4D85-BA91-9CC8ED100416}
+		{534D0599-2C53-4622-96F7-0BD796D12077} = {9389E7AC-6897-4DD0-930A-373E229BBA94}
+		{BF90A923-7979-49BD-ACAE-31A16889E8B1} = {9389E7AC-6897-4DD0-930A-373E229BBA94}
+	EndGlobalSection
+EndGlobal
