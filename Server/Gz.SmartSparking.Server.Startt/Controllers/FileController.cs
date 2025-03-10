@@ -1,10 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Gz.SmartParking.Server.ICommon;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 
 namespace Gz.SmartSparking.Server.Startt.Controllers
 {
     public class FileController
     {
+        IConfigration _configuration;
+        IFileUpgradeService _fileUpgradeService;
+        public FileController(IConfigration configuration, IFileUpgradeService fileUpgradeService)
+        {
+            _configuration = configuration;
+            _fileUpgradeService = fileUpgradeService;
+        }
         //[HttpPost]
         //[Route("download")]
         //public IActionResult Download([FromForm] IFormCollection formCollection)

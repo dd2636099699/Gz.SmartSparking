@@ -12,10 +12,14 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 using Gz.SmartParking.Server.ICommon;
-namespace Zhaoxi.SmartParking.Server.Start
+using Gz.SmartParking.Server.Common;
+using Gz.SmartSparking.Server.ICommon;
+using Gz.SmartSparking.Server.Common;
+namespace Gz.SmartParking.Server.Start
 {
     public class Startup
     {
+      
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,8 +30,9 @@ namespace Zhaoxi.SmartParking.Server.Start
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<Gz.SmartParking.Server.ICommon.IConfigration, Gz.SmartParking.Server.Common.Configration>();
-            services.AddTransient<Gz.SmartParking.Server.ICommon., Gz.SmartSparking.Server.Common.DbConnectionFactory>();
+
+            services.AddTransient<IConfigration,Configration>();
+            services.AddTransient<IDbConnectionFactory,DbConnectionFactory>();
             services.AddTransient<IService.IFileUpgradeService, Service.FileUpgradeService>();
 
             services.AddControllers();

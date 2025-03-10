@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gz.SmartSparking.Server.Common\Gz.SmartSparking.Server.Common.csproj" />
+    <ProjectReference Include="..\Gz.SmartSparking.Server.ICommon\Gz.SmartSparking.Server.ICommon.csproj" />
+    <ProjectReference Include="..\Gz.SmartSparking.Server.IService\Gz.SmartSparking.Server.IService.csproj" />
+  </ItemGroup>
+
+</Project>

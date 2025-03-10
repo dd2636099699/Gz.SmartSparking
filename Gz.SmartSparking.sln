@@ -19,6 +19,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gz.SmartSparking.Server.Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gz.SmartSparking.Server.ICommon", "Server\Gz.SmartSparking.Server.ICommon\Gz.SmartSparking.Server.ICommon.csproj", "{BF90A923-7979-49BD-ACAE-31A16889E8B1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{7DA43F42-5B6D-4860-A416-7AB90A5A4C64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gz.SmartSparking.Server.IService", "Server\Gz.SmartSparking.Server.IService\Gz.SmartSparking.Server.IService.csproj", "{54759A69-B87E-4523-B48B-B68E69C55CE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gz.SmartSparking.Server.Service", "Server\Gz.SmartSparking.Server.Service\Gz.SmartSparking.Server.Service.csproj", "{1EA9E6E8-E0F4-4261-B593-EE9A05BBEC8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +51,14 @@ Global
 		{BF90A923-7979-49BD-ACAE-31A16889E8B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF90A923-7979-49BD-ACAE-31A16889E8B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF90A923-7979-49BD-ACAE-31A16889E8B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54759A69-B87E-4523-B48B-B68E69C55CE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54759A69-B87E-4523-B48B-B68E69C55CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54759A69-B87E-4523-B48B-B68E69C55CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54759A69-B87E-4523-B48B-B68E69C55CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EA9E6E8-E0F4-4261-B593-EE9A05BBEC8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EA9E6E8-E0F4-4261-B593-EE9A05BBEC8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EA9E6E8-E0F4-4261-B593-EE9A05BBEC8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EA9E6E8-E0F4-4261-B593-EE9A05BBEC8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,5 +70,8 @@ Global
 		{9389E7AC-6897-4DD0-930A-373E229BBA94} = {358EAA63-8BE0-4D85-BA91-9CC8ED100416}
 		{534D0599-2C53-4622-96F7-0BD796D12077} = {9389E7AC-6897-4DD0-930A-373E229BBA94}
 		{BF90A923-7979-49BD-ACAE-31A16889E8B1} = {9389E7AC-6897-4DD0-930A-373E229BBA94}
+		{7DA43F42-5B6D-4860-A416-7AB90A5A4C64} = {358EAA63-8BE0-4D85-BA91-9CC8ED100416}
+		{54759A69-B87E-4523-B48B-B68E69C55CE5} = {7DA43F42-5B6D-4860-A416-7AB90A5A4C64}
+		{1EA9E6E8-E0F4-4261-B593-EE9A05BBEC8F} = {7DA43F42-5B6D-4860-A416-7AB90A5A4C64}
 	EndGlobalSection
 EndGlobal
