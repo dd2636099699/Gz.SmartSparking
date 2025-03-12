@@ -1,4 +1,4 @@
-namespace Gz.SmartSparking.Server.Startt
+namespace Gz.Smartparking.Server.Startt
 {
     public class WeatherForecast
     {

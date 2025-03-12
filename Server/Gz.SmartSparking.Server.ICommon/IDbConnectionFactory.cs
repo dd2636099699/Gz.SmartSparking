@@ -1,7 +1,6 @@
 
-using Gz.SmartSparking.Server.EFCore;
-
-namespace Gz.SmartSparking.Server.ICommon
+using Gz.Smartparking.Server.EFCore;
+namespace Gz.SmartParking.Server.ICommon
 {
     public interface IDbConnectionFactory
     {

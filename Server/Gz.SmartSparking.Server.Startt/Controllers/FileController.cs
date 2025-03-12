@@ -1,14 +1,17 @@
-﻿using Gz.SmartParking.Server.ICommon;
+﻿
+using Gz.SmartParking.Server.IService;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-
-namespace Gz.SmartSparking.Server.Startt.Controllers
+using Gz.SmartParking.Server.Models;
+using Gz.SmartParking.Server.ICommon;
+namespace Gz.SmartParking.Server.Startt.Controllers
 {
+    [ApiController]
+    [Route("api/v1/[controller]/[action]")]
     public class FileController
     {
-        IConfigration _configuration;
+        IAppConfiguration _configuration ;
         IFileUpgradeService _fileUpgradeService;
-        public FileController(IConfigration configuration, IFileUpgradeService fileUpgradeService)
+        public FileController(IAppConfiguration configuration, IFileUpgradeService fileUpgradeService)
         {
             _configuration = configuration;
             _fileUpgradeService = fileUpgradeService;
@@ -24,7 +27,6 @@ namespace Gz.SmartSparking.Server.Startt.Controllers
         //    return File(fs, contentType: type, fileName, enableRangeProcessing: true);
         //}
         [HttpGet]
-        [Route("check")]
         public JsonResult Check()
         {
             // EFCore

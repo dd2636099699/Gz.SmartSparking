@@ -1,16 +1,13 @@
-﻿using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
+﻿
+using Microsoft.Extensions.Configuration;
 using Gz.SmartParking.Server.ICommon;
-
+using System.IO;
 namespace Gz.SmartParking.Server.Common
 {
-    public class Configration:IConfigration
+    public class AppConfiguration : IAppConfiguration
     {
         private static IConfigurationRoot _iConfiguration;
-        static Configration()
+        static AppConfiguration()
         {
             var builder = new ConfigurationBuilder()
                     .SetBasePath(Directory.GetCurrentDirectory())
@@ -18,11 +15,13 @@ namespace Gz.SmartParking.Server.Common
 
             _iConfiguration = builder.Build();
         }
-
-
         public string Read(string key)
         {
             return _iConfiguration[key];
         }
     }
+
+
+ 
+    
 }

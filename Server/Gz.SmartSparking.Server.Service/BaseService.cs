@@ -7,6 +7,7 @@ using System.Text;
 using Gz.SmartParking.Server.ICommon;
 using Gz.SmartParking.Server.IService;
 
+
 namespace Gz.SmartParking.Server.Service
 {
     public class BaseService : IBaseService

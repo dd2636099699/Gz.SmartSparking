@@ -1,25 +1,13 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Threading.Tasks;
-using Gz.SmartParking.Server.ICommon;
+
+
 using Gz.SmartParking.Server.Common;
-using Gz.SmartSparking.Server.ICommon;
-using Gz.SmartSparking.Server.Common;
-namespace Gz.SmartParking.Server.Start
+using Gz.SmartParking.Server.ICommon;
+using Microsoft.OpenApi.Models;
+using Microsoft.Extensions.Configuration;
+namespace Gz.SmartParking.Server.Startt
 {
     public class Startup
     {
-      
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -30,15 +18,15 @@ namespace Gz.SmartParking.Server.Start
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            services.AddTransient<IConfigration,Configration>();
+            // 使用完整命名空间注册服务
+            services.AddTransient<IAppConfiguration, AppConfiguration>();
             services.AddTransient<IDbConnectionFactory,DbConnectionFactory>();
             services.AddTransient<IService.IFileUpgradeService, Service.FileUpgradeService>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Zhaoxi.SmartParking.Server.Start", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Gz.SmartParking.Server.Start", Version = "v1" });
             });
         }
 
@@ -49,11 +37,10 @@ namespace Gz.SmartParking.Server.Start
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Zhaoxi.SmartParking.Server.Start v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Gz.SmartParking.Server.Start v1"));
             }
 
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

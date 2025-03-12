@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0-windows</TargetFramework>
@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Gz.SmartSparking.Server.ICommon\Gz.SmartSparking.Server.ICommon.csproj" />
+    <ProjectReference Include="..\Gz.SmartSparking.Server.EFCore\Gz.SmartParking.Server.EFCore.csproj" />
   </ItemGroup>
 
 </Project>

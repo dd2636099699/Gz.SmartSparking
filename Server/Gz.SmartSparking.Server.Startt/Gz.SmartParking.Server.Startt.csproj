@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Gz.SmartParking.Server.Models\Gz.SmartParking.Server.Models.csproj" />
+    <ProjectReference Include="..\Gz.SmartSparking.Server.Common\Gz.SmartParking.Server.Common.csproj" />
+    <ProjectReference Include="..\Gz.SmartSparking.Server.ICommon\Gz.SmartParking.Server.ICommon.csproj" />
+    <ProjectReference Include="..\Gz.SmartSparking.Server.IService\Gz.SmartParking.Server.IService.csproj" />
+    <ProjectReference Include="..\Gz.SmartSparking.Server.Service\Gz.SmartParking.Server.Service.csproj" />
+  </ItemGroup>
+
+</Project>

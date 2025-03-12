@@ -1,15 +1,13 @@
 
-using Gz.SmartSparking.Server.EFCore;
-using Gz.SmartSparking.Server.ICommon;
-using Microsoft.Extensions.Configuration;
-using System;
+using Gz.Smartparking.Server.EFCore;
+using Gz.SmartParking.Server.ICommon;
 
-namespace Gz.SmartSparking.Server.Common
+namespace Gz.SmartParking.Server.Common
 {
     public class DbConnectionFactory : IDbConnectionFactory
     {
-        IConfiguration _configuration;
-        public DbConnectionFactory(IConfiguration configuration)
+        IAppConfiguration _configuration;
+        public DbConnectionFactory(IAppConfiguration configuration)
         {
             _configuration = configuration;
         }
@@ -18,11 +16,5 @@ namespace Gz.SmartSparking.Server.Common
         {
             return new EFCoreContext(_configuration.Read("DbConnectStr"));// ÷ª «’Î∂‘SqlServer
         }
-
-        EFCoreContext IDbConnectionFactory.CreateDbContext()
-        {
-            throw new NotImplementedException();
-        }
     }
-
 }
